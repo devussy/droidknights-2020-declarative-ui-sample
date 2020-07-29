@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="pe.devussy.droidknights2020.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_lithoSampleFragment"
+            app:destination="@id/lithoSampleFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_epoxySampleFragment2"
+            app:destination="@id/epoxySampleFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_composeSampleFragment"
+            app:destination="@id/composeSampleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lithoSampleFragment"
+        android:name="pe.devussy.droidknights2020.litho.LithoSampleFragment"
+        android:label="LithoSampleFragment" />
+    <fragment
+        android:id="@+id/epoxySampleFragment"
+        android:name="pe.devussy.droidknights2020.epoxy.EpoxySampleFragment"
+        android:label="EpoxySampleFragment" />
+    <fragment
+        android:id="@+id/composeSampleFragment"
+        android:name="pe.devussy.compose.ComposeSampleFragment"
+        android:label="ComposeSampleFragment" />
+</navigation>
